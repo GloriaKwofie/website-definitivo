@@ -1,48 +1,28 @@
-import './Noticias.css'
-import React from 'react'
-import NoticiasData from './NoticiasData'
-import pic1 from '../Fcimages/luciapapa.jpg'
-import pic2 from '../Fcimages/luciaplat.jpg'
-import pic3 from '../Fcimages/luciaref.png'
+import React, { useState, useEffect } from "react";
+import { useTranslation } from "react-i18next";
+import "./Noticias.css";
+import { Link } from "react-router-dom";
 
+const Noticias = () => {
+  const { t } = useTranslation();
+  const noticias = t("news", { returnObjects: true });
 
-function Noticias() {
   return (
-    <div className='news-card'>
-        <h1 className='news-title'>ULTIMAS NOTICIAS</h1>
-        <div className='newscards-container'>
-        <div className='news-wrapper'>
-        <ul className='newscard'>
-            <NoticiasData
-            image={pic1}
-            heading='Sor lucia vista el Papa'
-            text='Sor Lucia visita roma y lanca la nueva campaña para el hospital de campaña'
-            button='Leer mas'
-            path='/project'
-            />
-            <NoticiasData
-            image={pic2}
-            heading='Sor lucia vista el Papa'
-            text='Sor Lucia visita roma y lanca la nueva campaña para el hospital de campaña'
-            button='Leer mas'
-            path='/project'
-
-            />
-            <NoticiasData
-            image={pic3}
-            heading='Sor lucia vista el Papa'
-            text='Sor Lucia visita roma y lanca la nueva campaña para el hospital de campaña'
-            button='Leer más'
-            path='/project'
-
-            />
-            
-        </ul>
-        </div>
-        </div>
-    
+    <div className="noticias-card-container">
+      <h1 className="noticia-title">{t("latest_news")}</h1>
+      <div className="noticias-card-list">
+        {noticias.map((noticia) => (
+          <div className="noticias-card" key={noticia.id}>
+            <Link to={`/News/${noticia.id}`}>
+              <img src={noticia.carrousel1} alt={noticia.title} />
+              <h2>{noticia.title}</h2>
+              <p>{noticia.subtitle}</p>
+            </Link>
+          </div>
+        ))}
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Noticias
+export default Noticias;
