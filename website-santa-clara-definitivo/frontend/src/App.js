@@ -22,6 +22,7 @@ import Fundacion from "./components/Pages/Fundacion";
 import Objectivo from "./components/Pages/Objectivo";
 import Contacto from "./components/Pages/Contact";
 import Voluntarios from "./components/Pages/Voluntarios";
+import NewsPage from "./components/Noticias/NewsPage";
 
 function App() {
   return (
@@ -83,6 +84,9 @@ function App() {
       </Routes>
       <Routes>
         <Route path="/voluntarios" element={<Voluntarios />} />
+      </Routes>
+      <Routes>
+        <Route path="/News/:id" element={<NewsPage />} />
       </Routes>
 
       <Footer />

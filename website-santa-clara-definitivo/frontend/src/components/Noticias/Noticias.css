@@ -98,6 +98,23 @@ color: inherit;
   right: 5vw;
 }
 
+/*Noticias*/
+.newTitle{
+  color: #2A412B;
+  font-size: 50px;
+}
+
+.newsContainer{
+  max-width: 80%;
+  margin: auto;
+  text-align: left;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.newsP{
+  text-align: justify;
+}
 
 @media (max-width: 968px) {
   .noticias-card-list {
@@ -120,3 +137,4 @@ color: inherit;
     top: 40%;
   }
 }
+

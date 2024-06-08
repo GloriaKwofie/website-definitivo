@@ -3,7 +3,6 @@ import CardsItems from "./CardsItems";
 import "./Cards.css";
 import { useTranslation } from "react-i18next";
 
-
 function Cards() {
   const { t } = useTranslation();
   return (
@@ -57,7 +56,7 @@ function Cards() {
           <h1 className="otro-title">{t("otroproyectos-title")}</h1>
           <ul className="otro-cards-items">
             <CardsItems
-              src="https://fundacionlacaixa.org/documents/2278030/2299650/pobreza-infantil-invulnerables_1200x630.jpg"
+              src="https://fundacionlacaixa.org/documents/234043/558343/pobreza-infantil-invulnerables_1200x630.jpg/3a9499f9-0953-e6af-a57c-b84f532941d5?version=1.0&t=1697478753652&imagePreview=1"
               text={t("invulnerables-title")}
               path="/invulnerables"
             />
