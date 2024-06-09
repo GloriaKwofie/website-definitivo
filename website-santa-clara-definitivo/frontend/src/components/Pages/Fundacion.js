@@ -1,52 +1,41 @@
 import React from "react";
 import "./Fundacion.css";
 import aboutImage from "../Fcimages/woodbg.jpg";
+import { useTranslation } from "react-i18next";
 
 function Fundacion() {
+  const { t } = useTranslation();
   return (
     <>
       <div className="fundacion-container">
         <div className="fundacion-content">
-          <h1>La Fundación</h1>
-          <p>
-            La Fundación del Convento de Santa Clara nació gracias al impulso de
-            la Plataforma Ciudadana de Solidaridad, creada en el Convento de
-            Santa Clara de Manresa en abril del 2009.
-          </p>
-          <p>
-            La Fundación del Convento de Santa Clara se ha convertido en el
-            paraguas jurídico, organizativo y humano necesario para agilizar
-            respuestas integrales a corto y largo plazo para personas que han
-            sido expulsadas del sistema y que no pueden vivir con dignidad.
-          </p>
+          <h1>{t("fundacion")}</h1>
+          <p>{t("fund-text")}</p>
+          <p>{t("fund-text2")}</p>
         </div>
         <div className="fundacion-image-container">
           <img src={aboutImage} alt="About Us" className="fundacion-image" />
         </div>
         <div className="patronato">
-          <h1>El Patronato</h1>
-          <p className="para-intro">
-            El Patronato es el órgano de gobierno y de administración de la
-            Fundación, la representa y gestiona, y asume todas las facultades y
-            funciones necesarias para la consecución de los fines fundacionales.
-          </p>
-          <p>Presidente: Gabriel Prat Ametlla. </p>
-          <p> Vicepresidenta: Maria Rosa Giralt Mas.</p>
-          <p>Directora: Sor Lucía Caram Padilla.</p>
-          <p>Tesorero: Pere Pujadó Viusa.</p>
-          <p>Vocal: Mar Alapont Sisquella.</p>
-          <p>Vocal: Imma Augé Sanpera.</p>
-          <p>Vocal: Montserrat Domenech Santasusana.</p>
-          <p>Vocal: Pere Gassó Ollé.</p>
-          <p>Vocal: Frank Margenat Trias</p>
-          <p>Vocal: Jaume Masana Ribalta.</p>
-          <p>Vocal: Vicenç Mauri Claret.</p>
-          <p>Vocal: Xavier Perramon Ferran.</p>
-          <p>Vocal: Manel Serra Armangué.</p>
-          <p>Vocal: Xavier Sitges Roses.</p>
-          <p>Vocal: Frederic Solé Montoya.</p>
-          <p>Vocal: Gemma Torelló Sibill.</p>
-          <p>Secretario no patrón: Josep Ribera Ferrer.</p>
+          <h1>{t("patronato")}</h1>
+          <p className="para-intro">{t("pat-text")}</p>
+          <p>{t("presi")}</p>
+          <p>{t("vice")}</p>
+          <p>{t("dire")}</p>
+          <p>{t("teso")}</p>
+          <p>{t("vocal1")}</p>
+          <p>{t("vocal2")}</p>
+          <p>{t("vocal3")}</p>
+          <p>{t("vocal4")}</p>
+          <p>{t("vocal5")}</p>
+          <p>{t("vocal6")}</p>
+          <p>{t("vocal7")}</p>
+          <p>{t("vocal8")}</p>
+          <p>{t("vocal9")}</p>
+          <p>{t("vocal10")}</p>
+          <p>{t("vocal11")}</p>
+          <p>{t("vocal12")}</p>
+          <p>{t("secre")}</p>
           <div className="fundacion-image-container">
             <img src={aboutImage} alt="About Us" className="fundacion-image" />
           </div>
