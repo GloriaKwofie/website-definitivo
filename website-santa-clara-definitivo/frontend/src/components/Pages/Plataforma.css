@@ -9,7 +9,7 @@ p{
   padding: 10px;
 }
 .plat-section__title{
-    font-size: 60px;
+    font-size: 50px !important;
     -webkit-text-stroke: 1px black;
     color: white;
 
@@ -83,6 +83,10 @@ p{
 }
 .plat-card-body{
   margin: 15px;
+}
+
+.d-block{
+  object-fit: cover;
 }
 
 

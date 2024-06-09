@@ -4,26 +4,20 @@ import { Link } from "react-router-dom";
 import logo from "../Fcimages/fsantaclara.png";
 import generalitat from "../Fcimages/logo-generalitat.png";
 import manresa from "../Fcimages/logo_ajuntament_manresa.png";
+import { useTranslation } from "react-i18next";
 
 function Footer() {
+  const { t } = useTranslation();
   return (
     <div className="footer-container">
       <section className="footer-subscription">
-        <p className="footer-subscription-heading">
-          CON TU AYUDA ESTOS PROYECTOS SERÁN POSIBLES{" "}
-        </p>
-        <h2 className="support-text">Con el soporte de:</h2>
+        <p className="footer-subscription-heading">{t("footer-p1")}</p>
+        <h2 className="support-text">{t("footer-p2")}</h2>
         <div class="footer-links">
           <div class="footer-link-items">
-            <img
-              src={generalitat}
-             
-            />
+            <img src={generalitat} />
             <div class="footer-link-items">
-              <img
-                src={manresa}
-               
-              />
+              <img src={manresa} />
             </div>
           </div>
         </div>
@@ -36,7 +30,7 @@ function Footer() {
             </Link>
           </div>
           <small class="website-rights">
-            Fundació convent de Santa Clara © 2023
+            Fundació convent de Santa Clara © 2024
           </small>
           <div class="social-icons">
             <Link
