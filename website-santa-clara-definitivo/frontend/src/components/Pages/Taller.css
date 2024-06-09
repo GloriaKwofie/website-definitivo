@@ -1,5 +1,5 @@
 .tallersection__title{
-    font-size: 70px;
+    font-size: 50px !important;
     -webkit-text-stroke: 1px rgb(23, 22, 22);
     color: white;
 
@@ -28,6 +28,8 @@
     padding: 70px;
     margin-top: 20px;
     word-spacing: 3px;
+    max-width: 100%;
+    margin: auto;
   }
   .btn-taller{
     display: flex;
@@ -80,6 +82,12 @@
   .second-btn{
     display: block;
   }
+
+  .para-text2{
+    padding: 5px;
   }
-  
+  .taller__text{
+    padding: 10px;
+  }
+}
   

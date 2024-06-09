@@ -5,7 +5,7 @@
 
 }
 .invulnerables-img {
-    width: 800px;
+    width: 600px !important;
 }
 .invulnerables-header{
     width: 100%;
@@ -73,7 +73,7 @@
 
 @media (max-width: 968px){
     .invulnerables-img {
-        width: 500px;
+        width: 300px !important;
     }
 
     .invul-card{
