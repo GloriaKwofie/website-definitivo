@@ -2,7 +2,7 @@
 .fundacion-content h1{
     background-color: rgb(166, 242, 200);
     padding: 30px;
-    font-size: 80px;
+    font-size: 50px;
     margin-bottom: 40px;
 }
 .fundacion-container {
@@ -37,7 +37,7 @@
   }
   .patronato h1{
     padding: 30px;
-    font-size: 60px;
+    font-size: 50px;
     background-color: rgb(131, 238, 188);
   }
   .para-intro{
