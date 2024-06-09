@@ -176,7 +176,20 @@
       "carrousel4": "https://raw.githubusercontent.com/GloriaKwofie/website-definitivo/main/website-santa-clara-definitivo/frontend/src/Images/libro6.jpg",
       "ubicacion": "Barcelona, Spain"
     }
-  ]
+  ],
+  "home": "Home",
+  "transparence": "Transparency",
+  "projects": "Projects",
+  "nosotros": "About us",
+  "participa": "Participate",
+  "contact": "Contact",
+  "donativo": "Make a donation",
+  "ab-fundation":"The fundation",
+  "ab-goals" : "Goals",
+  "ab-team" : "Technical team",
+  "part-donar": "Donate",
+  "part-vol": "Volunteers",
+  "part-tiendas": "Solidarity store"
 
 
 
