@@ -5,10 +5,11 @@ import { Link } from "react-router-dom";
 import Dropdown from "../Dropdown-menu/Dropdown";
 import ParticipaDropdown from "../Dropdown-menu/ParticipaDropdown";
 import { MenuList } from "../Menulist/Menulist";
-import Languagebtn from "../Pages/TranslateBtn"
-
+import Languagebtn from "../Pages/TranslateBtn";
+import { useTranslation } from "react-i18next";
 
 function Navi() {
+  const { t } = useTranslation();
   const [dropdown, setDropdown] = useState(false);
   const [dropdown2, setDropdown2] = useState(false);
 
@@ -34,18 +35,17 @@ function Navi() {
 
   return (
     <>
-    <Languagebtn/>
+      <Languagebtn />
       <nav className="Main-navbar">
         <div className="navbar-container">
-         <div>
-         </div>
+          <div></div>
           <img className="logo" onClick={closeMobileMenu} src={logo} alt="" />
           <div className="menu-icons" onClick={handleClick}>
             <i className={click ? "fas fa-times" : "fas fa-bars"} />
           </div>
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             {MenuList.map((item) => {
-              if (item.title === "Quiénes somos") {
+              if (item.title === "nosotros") {
                 return (
                   <li
                     key={item.id}
@@ -54,12 +54,12 @@ function Navi() {
                     onMouseLeave={() => setDropdown(false)}
                   >
                     <Link to={item.url} className="nav-links">
-                      {item.title}
+                      {t(item.title)}
                     </Link>
                     {dropdown && <Dropdown />}
                   </li>
                 );
-              } else if (item.title === "Quieres Participar") {
+              } else if (item.title === "participa") {
                 return (
                   <li
                     key={item.id}
@@ -68,7 +68,7 @@ function Navi() {
                     onMouseLeave={() => setDropdown2(false)}
                   >
                     <Link to={item.url} className="nav-links">
-                      {item.title}
+                      {t(item.title)}
                     </Link>
                     {dropdown2 && <ParticipaDropdown />}
                   </li>
@@ -81,15 +81,17 @@ function Navi() {
                     className="nav-links"
                     onClick={closeMobileMenu}
                   >
-                    {item.title}
+                    {t(item.title)}
                   </Link>
                 </li>
               );
             })}
           </ul>
-          {button &&<Link to="/donar" className="button">
-           <strong>HAZ UN DONATIVO</strong> 
-          </Link>}
+          {button && (
+            <Link to="/donar" className="button">
+              <strong>{t("donativo")}</strong>
+            </Link>
+          )}
         </div>
       </nav>
     </>
