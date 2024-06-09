@@ -45,14 +45,22 @@ function Invulnerables() {
               <img src={InvulnerablePic} class="invulnerables-img" alt="..." />
             </div>
             <div className="invul-image-collage">
+              <img src={InvulnerableColl} alt="..." className="collage-image" />
               <img
-                src={InvulnerableColl}
-                alt="Image 1"
+                src={InvulnerableColl2}
                 className="collage-image"
+                alt="..."
               />
-              <img src={InvulnerableColl2} className="collage-image" />
-              <img src={InvulnerableColl3} className="collage-image" />
-              <img src={InvulnerableColl4} className="collage-image" />
+              <img
+                src={InvulnerableColl3}
+                className="collage-image"
+                alt="..."
+              />
+              <img
+                src={InvulnerableColl4}
+                className="collage-image"
+                alt="..."
+              />
             </div>
           </div>
         </div>
