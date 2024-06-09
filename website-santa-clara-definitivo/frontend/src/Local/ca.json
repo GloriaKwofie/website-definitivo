@@ -32,7 +32,7 @@
 "resi-title" :"RESIDÈNCIA",
 "huerto-title" :"HORT ECOLÒGIC",
 "pisos-title" :"PISOS D'ACOLLIDA",
-"taller-title" :"TALLER DE NINES",
+"taller-title" :"TALLER DE NENES",
 "duchas-title" :"ESPAI DE DUTXES",
 "cosidor-title" :"COSIDOR",
 "oftamologia-title" :"OFTAMOLOGIA",
@@ -189,7 +189,9 @@
   "ab-team" : "Equip tècnic",
   "part-donar": "Donar",
   "part-vol": "Voluntaris",
-  "part-tiendas": "Botiga solidària"
+  "part-tiendas": "Botiga solidària",
+  "footer-p1": "Amb la teva ajuda tots aquests projectes seran possibles",
+  "footer-p2":"Amb el suport de:"
 
 
 

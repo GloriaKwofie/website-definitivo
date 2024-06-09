@@ -1,4 +1,4 @@
-{"mission-title": "Mission",  
+{"mission-title": "Misión",  
 "mission":" Transformando vidas y brindando a las personas la oportunidad de cambiar su historia y ser un factor de cohesión social y altavoz de los que no tienen voz.",
 "vision-title": "Visión",  
 "vission": " Llegar a ser una organización de referencia en la Cataluña Central, capaz de transformar y aportar nuevos modelos para erradicar las injusticias.",
@@ -32,10 +32,10 @@
 "resi-title" :"RESIDENCIA",
 "huerto-title" :"HUERTO ECOLOGICO",
 "pisos-title" :"PISOS DE ACOGIDA",
-"taller-title" :"TALLER DE NINAS",
+"taller-title" :"TALLER DE NIÑAS",
 "duchas-title" :"ESPACIO DE DUCHAS",
-"cosidor-title" :"COSIDOR",
-"oftamologia-title" :"OFTAMOLOGIA",
+"cosidor-title" :"COSEDOR",
+"oftamologia-title" :"OFTAMOLOGÍA",
 "otroproyectos-title" :"OTROS PROJECTOS",
 "invulnerables-title" :"INVULNERABLES",
 "corridores-title" :"CORRIDORES HUMANITARIOS",
@@ -44,7 +44,7 @@
 "plataforma-paragraph" :"Es un recurso destinado a dar soporte a las necesidades esenciales de comer a las personas que se encuentran en situación de mayor pobreza y vulnerabilidad en nuestro entorno. Este Colectivo se lo  dirige a personas sin recursos necesarios para vivir con dignidad: Son personas que no reciben ningún tipo de ayuda, personas que estan en situaciónes de pobreza y inmigrantes en situación irregular o en precariedad.",
 "plat-card-intro" :"Número de personas atendidas(2 VECES)",
 "plat-card-intro-bold" :"MENSUAL",
-"plat-card-data" :"Families",
+"plat-card-data" :"Familias",
 "plat-card-data2" :"Personas",
 "plat-card-obj1" :"Objetivo 1",
 "plat-card-obj1-para" :"Proporcionar alimentos a personas y familias para cubrir su necesidad básica de comida y garantizar una dieta equilibrada.",
@@ -189,5 +189,7 @@
   "ab-team" : "Equipo técnico",
   "part-donar": "Donar",
   "part-vol": "Voluntarios",
-  "part-tiendas": "Tienda solidaria"
+  "part-tiendas": "Tienda solidaria",
+  "footer-p1": "Con tu ayuda todos estos proyectos serán posibles",
+  "footer-p2":"Con el soporte de:"
 }

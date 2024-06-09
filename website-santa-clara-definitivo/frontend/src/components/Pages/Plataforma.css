@@ -85,6 +85,10 @@ p{
   margin: 15px;
 }
 
+.d-block{
+  object-fit: cover;
+}
+
 
 .small-card-container{
   display: flex;

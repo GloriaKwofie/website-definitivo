@@ -1,4 +1,4 @@
-{"mission-title": "Mision",    
+{"mission-title": "Mission",    
 "mission":" Transforming lives and giving people the opportunity to change their history and be a factor of social cohesion and speaker for those who have no voice.",
 "vision-title": "Vision",  
 "vission": "To become a reference organization in Central Catalonia, capable of transforming and providing new models to eradicate injustices.",
@@ -189,7 +189,9 @@
   "ab-team" : "Technical team",
   "part-donar": "Donate",
   "part-vol": "Volunteers",
-  "part-tiendas": "Solidarity store"
+  "part-tiendas": "Solidarity store",
+  "footer-p1": "With your help all these projects will be possible",
+  "footer-p2":"Supported by:"
 
 
 
