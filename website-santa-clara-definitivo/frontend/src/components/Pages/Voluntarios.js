@@ -7,26 +7,18 @@ import collage1 from "../Fcimages/teamwork.png";
 import collage2 from "../Fcimages/teamwork.png";
 import collage3 from "../Fcimages/teamwork.png";
 import collage4 from "../Fcimages/teamwork.png";
+import { useTranslation } from "react-i18next";
 
 function Voluntarios() {
+  const { t } = useTranslation();
   return (
     <>
       <div className="voluntario-container">
-        <h1 className="voluntario-title">Los Voluntarios</h1>
+        <h1 className="voluntario-title">{t("voluntarios")}</h1>
 
         <div className="voluntario-para-section">
-          <p>
-            Los voluntarios son el gran capital humano de la Fundación. Son los
-            responsables de la acogida y acompañamiento de las personas, y el
-            lema que los anima y marca su actuación es siempre “acoger con el
-            corazón”.
-          </p>
-          <p>
-            Creemos que todos somos corresponsables con la vida de las personas
-            y apostamos por el compromiso desinteresado y de calidad para servir
-            y luchar por un mundo donde todos tengan oportunidades para
-            evolucionar.
-          </p>
+          <p>{t("vol-text")}</p>
+          <p>{t("vol-text2")}</p>
         </div>
 
         <div className="voluntario-card-section">
@@ -37,11 +29,9 @@ function Voluntarios() {
               className="voluntario-card-image"
             />
             <h3 className="voluntario-card-title">
-              <strong>El Compromiso</strong>
+              <strong>{t("compromiso")}</strong>
             </h3>
-            <p className="voluntario-card-description">
-              Están dispuestas a darlo todo sin nada a cambio.
-            </p>
+            <p className="voluntario-card-description">{t("comp-text")}</p>
           </div>
 
           <div className="voluntario-card">
@@ -51,11 +41,9 @@ function Voluntarios() {
               className="voluntario-card-image"
             />
             <h3 className="voluntario-card-title">
-              <strong>La Compasión</strong>
+              <strong>{t("compasion")}</strong>
             </h3>
-            <p className="voluntario-card-description">
-              Son sensibles a la situación de la gente.
-            </p>
+            <p className="voluntario-card-description">{t("compa-text")}</p>
           </div>
 
           <div className="voluntario-card">
@@ -65,19 +53,17 @@ function Voluntarios() {
               className="voluntario-card-image"
             />
             <h3 className="voluntario-card-title">
-              <strong>Trabajo en Equipo</strong>
+              <strong>{t("team")}</strong>
             </h3>
-            <p className="voluntario-card-description">
-              Trabajando juntos para lograr los mismos objetivos.
-            </p>
+            <p className="voluntario-card-description">{t("team-text")}</p>
           </div>
         </div>
         <div class="voluntario-collage">
-            <img src={collage1} alt="Image 1" />
-            <img src={collage2} alt="Image 2" />
-            <img src={collage3} alt="Image 3" />
-            <img src={collage4} alt="Image 4" />
-          </div>
+          <img src={collage1} alt="Image 1" />
+          <img src={collage2} alt="Image 2" />
+          <img src={collage3} alt="Image 3" />
+          <img src={collage4} alt="Image 4" />
+        </div>
       </div>
     </>
   );
