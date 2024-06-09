@@ -29,31 +29,36 @@ function Navi() {
 
   useEffect(() => {
     showButton();
+    window.addEventListener("resize", showButton);
+    return () => window.removeEventListener("resize", showButton);
   }, []);
-
-  window.addEventListener("resize", showButton);
 
   return (
     <>
       <Languagebtn />
       <nav className="Main-navbar">
         <div className="navbar-container">
-          <div></div>
-          <img className="logo" onClick={closeMobileMenu} src={logo} alt="" />
+          <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
+            <img className="logo" src={logo} alt="logo" />
+          </Link>
           <div className="menu-icons" onClick={handleClick}>
             <i className={click ? "fas fa-times" : "fas fa-bars"} />
           </div>
           <ul className={click ? "nav-menu active" : "nav-menu"}>
-            {MenuList.map((item) => {
+            {MenuList.map((item, index) => {
               if (item.title === "nosotros") {
                 return (
                   <li
-                    key={item.id}
+                    key={index}
                     className={item.cName}
                     onMouseEnter={() => setDropdown(true)}
                     onMouseLeave={() => setDropdown(false)}
                   >
-                    <Link to={item.url} className="nav-links">
+                    <Link
+                      to={item.url}
+                      className="nav-links"
+                      onClick={closeMobileMenu}
+                    >
                       {t(item.title)}
                     </Link>
                     {dropdown && <Dropdown />}
@@ -62,12 +67,16 @@ function Navi() {
               } else if (item.title === "participa") {
                 return (
                   <li
-                    key={item.id}
+                    key={index}
                     className={item.cName}
                     onMouseEnter={() => setDropdown2(true)}
                     onMouseLeave={() => setDropdown2(false)}
                   >
-                    <Link to={item.url} className="nav-links">
+                    <Link
+                      to={item.url}
+                      className="nav-links"
+                      onClick={closeMobileMenu}
+                    >
                       {t(item.title)}
                     </Link>
                     {dropdown2 && <ParticipaDropdown />}
@@ -75,7 +84,7 @@ function Navi() {
                 );
               }
               return (
-                <li className={item.cName}>
+                <li key={index} className={item.cName}>
                   <Link
                     to={item.url}
                     className="nav-links"
